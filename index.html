@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-crypto-js@latest/dist/SimpleCrypto.min.js"></script>
+    </head>
+    <body>
+        <input type="button" value="로그인 해주세요." onclick="
+            var username = 'egoing';
+            var password = 'bcb15f821479b4d5772bd0ca866c00ad5f926e3580720659cc80d39c9d09802a';
+            var inputUsername = prompt('username');
+            var inputPassword = prompt('password');
+            if(inputUsername === username){
+                if(sha256(inputPassword) === password){
+                    alert('주인님 안녕하세요.')
+                } else {
+                    alert('뉘슈?');
+                }
+            } else {
+                alert('뉘슈?');
+            }
+        ">
+        <h1>WEB</h1>
+        <ol>
+            <li>html</li>
+            <li>css</li>
+            <li>js</li>
+        </ol>
+        <article>
+            <h2>html</h2>
+            Hello Hana bank!
+        </article>
+    </body>
+</html>
